@@ -1,0 +1,9 @@
+*.a
+*.d
+*.o
+*~
+*swp
+*.tmp
+bin/main
+test/test
+*.log
