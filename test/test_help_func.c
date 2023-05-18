@@ -49,4 +49,3 @@ CTEST(check, program2) {
     const int real = 1;
     ASSERT_EQUAL(exp, real);
 }
-
