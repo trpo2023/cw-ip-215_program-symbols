@@ -14,3 +14,12 @@ obj/src/course/course.o: src/course/course.c
 obj/src/lib/help_func.o: src/lib/help_func.c src/lib/help_func.h
 	$(CC) -c $(CFLAGS) $< $(CPPFLAGS) -o $@ -I src/lib
 
+.PHONY: clean
+clean:
+	rm bin/main
+	rm obj/src/course/*.o
+	rm obj/src/course/*.d
+	rm obj/src/lib/*.d
+	rm obj/src/lib/*.o
+	rm obj/src/lib/*.a
+
