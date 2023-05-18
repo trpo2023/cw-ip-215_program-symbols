@@ -1,4 +1,5 @@
 #include "help_func.h"
+
 #include <stdio.h>
 
 void push(Stack* stack, char c) {
