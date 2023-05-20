@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef HELP_FUNC_H
 #define HELP_FUNC_H
 
