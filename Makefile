@@ -39,5 +39,12 @@ test/test_help_func.o: test/test_help_func.c thirdparty/ctest.h
 
 test/main.o: test/main.c test/test_help_func.o thirdparty/ctest.h
 	$(CC) -c $(CFLAGS) $< $(CPPFLAGS) -o $@ -I thirdparty -I src/lib
+	
+cfiles := $(shell find . -type f -name '*.c')
+hfiles := $(shell find . -type f -name '*.h')
+
+.PHONY: format
+format:
+	clang-format -i $(cfiles) $(hfiles)
 
 
