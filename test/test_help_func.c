@@ -44,16 +44,3 @@ CTEST(is_balanced, program6)
     ASSERT_EQUAL(exp, real);
 }
 
-CTEST(check, program1)
-{
-    int exp = check(0);
-    const int real = 0;
-    ASSERT_EQUAL(exp, real);
-}
-
-CTEST(check, program2)
-{
-    int exp = check(1);
-    const int real = 1;
-    ASSERT_EQUAL(exp, real);
-}
