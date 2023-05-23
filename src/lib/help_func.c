@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 
-void push(Stack* stack, char c) {
+void push(Stack* stack, char c)
+{
     if (stack->top < STACK_MAX) {
         stack->data[stack->top] = c;
         stack->top++;
@@ -11,7 +12,8 @@ void push(Stack* stack, char c) {
     }
 }
 
-char pop(Stack* stack) {
+char pop(Stack* stack)
+{
     if (stack->top > 0) {
         stack->top--;
         return stack->data[stack->top];
@@ -21,7 +23,8 @@ char pop(Stack* stack) {
     }
 }
 
-int is_balanced(char* program) {
+int is_balanced(char* program)
+{
     Stack stack = {0};
     for (int i = 0; program[i] != '\0'; i++) {
         char c = program[i];
@@ -53,7 +56,8 @@ int is_balanced(char* program) {
     return stack.top == 0;
 }
 
-int check(int answer) {
+int check(int answer)
+{
     if (answer) {
         printf("balanced\n");
         return 1;
