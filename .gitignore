@@ -1,0 +1,10 @@
+*.a
+*.d
+*.o
+*.DS_Store
+*~
+*swp
+*.tmp
+bin/main
+test/test
+*.log
