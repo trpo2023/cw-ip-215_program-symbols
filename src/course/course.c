@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     char program[STACK_MAX];
     const char* file_name = "program.txt";
 
