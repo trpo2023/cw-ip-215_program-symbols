@@ -43,4 +43,3 @@ CTEST(is_balanced, program6)
     const int real = 0;
     ASSERT_EQUAL(exp, real);
 }
-
